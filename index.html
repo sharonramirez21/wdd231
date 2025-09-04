@@ -1,1 +1,54 @@
-sharon ivon ramirez wdd231
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231</title>
+    <meta name="Author" content="Sharon Ivon Ramirez">
+    <meta name="description" content="WDD 231 - WEEK 01">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navegation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/user-tie-solid-full.svg" alt="Site Logo" width="640" height="640">
+        <span>Sharon's Site Title</span>
+        <button id="ham-btn" class="hamburguer" aria-label="navigation menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>I'm Sharon. I born and grow up in Argentina, Santa Fe. I'm studying Software Development. I enjoy learning new tools and technologies that help me grow in this field. I'm curious, organized and love working on projects where I can share ideas and learn from others.</p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/sharon ramirez img.webp" alt="Sharon Ramirez photo" width="631" height="639" loading="lazy">
+        </section>
+        <section class="certificates">
+            <h2>Web Certificate Courses</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/github-brands-solid-full.svg" alt="github" width="20" height="20"></a>
+            <a href="#" target="_blank"><img src="images/linkedin-brands-solid-full.svg" alt="linkedin" width="20" height="20"></a>
+            <a href="#" target="_blank"><img src="images/whatsapp-brands-solid-full.svg" alt="whatsapp" width="20" height="20"></a>
+        </div>
+        <p>&copy;<span id="currentyear"></span>😀 Sharon Ramirez 😀 Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
