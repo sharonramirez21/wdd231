@@ -102,9 +102,11 @@ function displayCourses(list) {
     // button ____
     const buttonsDiv = document.createElement("div");
     buttonsDiv.className = "buttons-div";
+
     ["All", "CSE", "WDD"].forEach(type => {
         const btn = document.createElement("button");
         btn.textContent = type;
+
         btn.addEventListener("click", () => {
             if (type === "All"){
                 displayCourses(courses);
