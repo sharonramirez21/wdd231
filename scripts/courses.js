@@ -126,16 +126,16 @@ function displayCourses(list) {
     list.forEach(course => {
         const div = document.createElement("div");
         div.className = "course";
-        div.textContent = `${course.subject} ${course.number}`;
+        div.textContent = `${course.subject} ${course.number} ${course.completed ? "✔" : ""}`;
         courseList.appendChild(div);
 
         //change color
         if (course.completed) {
-            div.style.backgroundColor = "#F1F0EA";
+            div.style.backgroundColor = "#534B52";
+            div.style.color = "#fff";
         }
         else {
-            div.style.backgroundColor = "#2D232E";
-            div.style.color = "#fff";
+            div.style.backgroundColor = "#fff";
         }
 
         total += course.credits;
@@ -145,7 +145,7 @@ function displayCourses(list) {
 
     //credits total
     const credits = document.createElement("p");
-    credits.textContent = `The total credits for courses listed above is ${total}`;
+    credits.textContent = `The total credits for courses listed above is ${total}.`;
     certificateSection.appendChild(credits);
 };
 
