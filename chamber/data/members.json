@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name" : "Hotel Aurora",
+            "address" : "General Paz 123",
+            "phone" : "0342-333-1234",
+            "url" : "hotelaurora.com",
+            "photo" : "./images/hotel-aurora.webp",
+            "membership" : 1,
+            "cathegory" : "hotel" 
+        },
+        {
+            "name" : "MiniMarket Express",
+            "address" : "Blas Parera 442",
+            "phone" : "800-111-3698",
+            "url" : "expressminimarket.com",
+            "photo" : "./images/miniexpress.webp",
+            "membership" : 3,
+            "cathegory" : "mini-market" 
+        },
+        {
+            "name" : "Dulce Panaderia",
+            "address" : "Estanislao Zeballos 789",
+            "phone" : "0342-789-8134",
+            "url" : "dulcepasteleria.com",
+            "photo" : "./images/dulcepanaderia.webp",
+            "membership" : 2,
+            "cathegory" : "bakery" 
+        },
+        {
+            "name" : "Sonrisa Resort",
+            "address" : "San Martin 123",
+            "phone" : "800-555-1234",
+            "url" : "sonrisaresort.com",
+            "photo" : "./images/sonrisaresort.webp",
+            "membership" : 3,
+            "cathegory" : "hotel" 
+        },
+        {
+            "name" : "Martin Super",
+            "address" : "Aristobulo del Valle 596",
+            "phone" : "800-789-1493",
+            "url" : "martinsuper.com",
+            "photo" : "./images/martinsuper.webp",
+            "membership" : 2,
+            "cathegory" : "supermarket" 
+        },
+        {
+            "name" : "Alicia Verduleria",
+            "address" : "Calle Salta 148",
+            "phone" : "0342-555-1826",
+            "url" : "aliciaverduleria.com",
+            "photo" : "./images/aliciaverduleria.webp",
+            "membership" : 1,
+            "cathegory" : "greengrocery" 
+        },
+        {
+            "name" : "Verduleria Rayitos de sol",
+            "address" : "San Martin 552",
+            "phone" : "800-189-3489",
+            "url" : "rayitosdesol.com",
+            "photo" : "./images/rayitosdesol.webp",
+            "membership" : 2,
+            "cathegory" : "greengrocery" 
+        }
+    ]
+}

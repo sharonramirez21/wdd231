@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: auto 0;
+}
+
+/********** HEADER ********/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 24px 44px;
+    gap: 1px;
+    background-color: #3C4F76;
+    align-items: center;
+    max-width: 100%;
+    padding: 5px 0;
+}
+
+header span {
+    font-family: "Merriweather", serif;
+    color: #fff;
+    text-align: center;
+}
+
+.site-logo {
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.dark-mode {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 18px;
+    background: none;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+}
+
+.dark-mode::before {
+    content: "🌗";
+    display: block;
+    text-align: center;
+}
+
+/******************** NAVEGATION ***************************/
+.hamburguer {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hamburguer::before {
+    content: "\2630";
+    font-size: 1.2rem;
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+}
+
+/*********************** nav menu ***************************/
+.navigation {
+    display: none;
+    background-color: #3C4F76;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: solid 1px #ddd;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+}
+
+.navigation li.current a {
+    background-color: #fff;
+    color: #3C4F76;
+}
+
+.navigation a:hover {
+    background-color: #ccc;
+    color: #3C4F76;
+    cursor: pointer;
+}
+
+/*********************** FOOTER ***************************/
+footer {
+    background-color: #3C4F76;
+    color: #fff;
+    padding: 10px;
+    font-family: "Roboto Flex", serif;
+    padding-left: 10px;
+}
+
+.name-footer {
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    padding-bottom: 10px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    border: #ddd solid 1px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+/************* H1 ******************/
+h1 {
+    font-family: "Merriweather", serif;
+    text-align: center;
+}
+
+/***************** TOGGLES **************************/
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.view-toggle button {
+    padding: 4px 8px;
+    border: 1px solid #3C4F76;
+    background-color: #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+#grid-btn::before {
+    content: "⊞";
+}
+
+#list-btn::before {
+    content:"☰";
+}
+.view-toggle button:hover {
+    background-color: #3C4F76;
+    color: #fff;
+}
+
+/******************** MEMBERS INFO *******************/
+#cards {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.member-card h3 {
+    font-family: "Merriweather", serif;
+}
+
+.member-card img {
+    padding: 5px 0;
+    width: 250px;
+    height: auto;
+}
+
+.member-card p {
+    font-family: "Roboto Flex", serif;
+}
+
+#cards.list .member-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#cards.list .member-card img {
+    display: none;
+}
+
+#cards.list .member-card:nth-child(odd) {
+    background-color: #dee9ff;
+}
+#cards.list .member-card:nth-child(even) {
+    background-color: #fff;
+}
+
+#cards.list .member-card h3,
+#cards.list .member-card p,
+#cards.list .member-card a {
+    flex: 1;
+    margin: 2px 2px;
+    font-size: 0.8rem;
+    max-width: 50%;
+}
