@@ -60,16 +60,15 @@
     #spotlight {
         max-width: 100%;
         margin: 0 auto;
+        padding: 0;
     }
 
     #spotlight-cont {
-        margin-left: 22px;
-        margin-right: 22px;
-        margin-bottom: 20px;
+        margin: 0 20px 20px 20px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
-        max-width: 100%;
+        max-width: 97%;
     }
 
     .member-card {
@@ -123,6 +122,7 @@
         width: 100%;
         display: grid;
         max-width: 96%;
+        padding: 0;
         grid-template-columns: 2fr 1fr 1fr;
         gap: 1rem;
     }
@@ -149,5 +149,15 @@
     #forecast {
         width: 100%;
         box-sizing: border-box;
+    }
+
+    /*********  JOIN BTN ********/
+    #hero .join-btn {
+        margin-right: 18px;
+    }
+
+    /********** FOOTER ********/
+    footer {
+        padding-left: 25px;
     }
 }

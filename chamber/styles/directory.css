@@ -187,17 +187,16 @@ main {
 
 #spotlight {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr;
     box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
+    padding: 10px;
     max-width: 100%;
     align-items: center;
     justify-content: center;
 }
 
 #spotlight-cont {
+    width: 100%;
     max-width: 100%;
 }
 
@@ -208,8 +207,7 @@ main {
     box-shadow: 0 6px 2px rgb(0,0, 0, 0.1);
     text-align: center;
     margin: 0 auto;
-    padding: 10px;
-    margin: 20px;
+    margin-bottom: 20px;
     border-radius: 6px;
 }
 
@@ -221,6 +219,7 @@ main {
 
 .member-card h3 {
     font-family: 'Merriweather', serif;
+    padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
@@ -228,6 +227,7 @@ main {
 
 .member-card p {
     font-family: 'Roboto Flex', serif;
+    padding-bottom: 10px;
 }
 
 /************--- hero img and btn *********************/
@@ -248,7 +248,7 @@ main {
     position: absolute;
     bottom: 10px;
     bottom: 20px;     
-    right: 20px;   
+    right: 12px;   
     padding: 10px 20px;
     background-color: #3C4F76;
     color: white;
@@ -273,8 +273,9 @@ main {
 
 /****************** div first grid- *********************/
 .first-grid {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 10px;
 }
 
 /*************  EVENTS *******************/
