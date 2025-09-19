@@ -262,6 +262,14 @@ main {
     color: #3C4F76;
 }
 
+.title-name {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    font-size: 20px;
+}
 
 /****************** div first grid- *********************/
 .first-grid {

@@ -48,6 +48,13 @@
     header span {
         padding-left: 1rem;
     }
+
+    /************* H1 IN HERO ****************/
+    .title-name {
+        top: 40%;
+        left: 20%;
+        font-size: 40px;
+    }
     
     /********MEMEBERS ***/
     #spotlight {
