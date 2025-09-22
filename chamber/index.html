@@ -40,7 +40,12 @@
     
     <main>
         <section id="hero">
-            <img src="images/hero.webp" alt="Santa Fe, Chamber Commerce">
+            <img 
+            src="images/hero.webp"
+            srcset="images/hero-small.webp 640w, images/hero.webp 1280w"
+            alt="Santa Fe, Chamber Commerce"
+            width="1280"
+            height="640">
             <h1 class="title-name">Santa Fe Chamber of Commerce Directory</h1>
             <a class="join-btn" href="/join.html">Keynotes Tickets</a>
         </section>
@@ -48,6 +53,7 @@
         <div class="first-grid">
             <section id="events">
                 <h2>Events</h2>
+                <div id="event-container"></div>
             </section>
 
             <section class="weather">

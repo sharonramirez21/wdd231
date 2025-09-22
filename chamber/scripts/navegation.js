@@ -156,10 +156,13 @@ function displayCurrrentWeather(data) {
 
     // icon and desc
     const img = document.createElement("img");
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;
     img.setAttribute(`src`, iconsrc);
     img.setAttribute(`alt`, desc);
+    img.setAttribute("loading", "lazy");
+    img.setAttribute(`width`, `100`);
+    img.setAttribute(`height`, `100`);
     const descP = document.createElement("p");
     descP.textContent = `${desc}`;
 
@@ -246,5 +249,48 @@ function displayForecastWeather(data) {
     });
 };
 
+// EVENTS
+function loadEvent() {
+    const events = [
+        {
+            title: "Spring Day Celebration",
+            date: "September 21, 2025",
+            location: "City Park",
+            description: "Celebrate the arrival of spring with music, food stands, and outdoor activities for all ages.",
+        }
+    ]
+
+
+    const eventContainer = document.querySelector("#event-container");
+    eventContainer.innerHTML = "";
+    events.forEach(e => {
+        const article = document.createElement("article");
+        article.classList.add("event-card");
+        article.innerHTML = "";
+
+        const title = document.createElement("h3");
+        title.textContent = `${e.title}`;
+        title.classList.add("title-e");
+
+        const date = document.createElement("p");
+        date.textContent = `${e.date}`;
+        date.classList.add("date-event");
+
+        const location = document.createElement("p");
+        location.textContent = `Location: ${e.location}`;
+
+        const description = document.createElement("p");
+        description.textContent = `${e.description}`;
+
+        article.appendChild(title);
+        article.appendChild(date);
+        article.appendChild(location);
+        article.appendChild(description);
+
+        eventContainer.appendChild(article);
+    });
+}
+
 getWeather();
 getForecast();
+loadEvent();
