@@ -78,13 +78,13 @@ function DisplayModals() {
 document.addEventListener("click", e => {
     if(e.target.matches("[data-modal]")) {
         const modalID = e.target.getAttribute("data-modal");
-        document.getElementById(modalID).showModal();
+        const modal = document.getElementById(modalID);
         modal.showModal();
         modal.classList.add("opened");
     }
 
     if(e.target.matches(".close-btn")){
-        e.target.closest("dialog").close();
+        const modal = e.target.closest("dialog");
         modal.close();
         modal.classList.add("closed");
     }
