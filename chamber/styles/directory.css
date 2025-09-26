@@ -450,12 +450,13 @@ form {
 
 }
 
-form h2 {
+form h1 {
     padding: 5px;
     text-align: center;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     font-family: 'Merriweather', serif;
+    font-size: 20px;
 }
 
 label {
@@ -538,7 +539,7 @@ dialog {
     border-radius: 6px;
 }
 
-dialog:modal {
+dialog:open {
     border: 1px solid #ccc;
     padding: 20px;
     width: 85%;
