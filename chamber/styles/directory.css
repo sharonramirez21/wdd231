@@ -539,7 +539,7 @@ dialog {
     border-radius: 6px;
 }
 
-dialog:open {
+dialog.opened {
     border: 1px solid #ccc;
     padding: 20px;
     width: 85%;

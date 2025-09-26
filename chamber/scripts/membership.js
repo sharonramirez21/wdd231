@@ -79,10 +79,14 @@ document.addEventListener("click", e => {
     if(e.target.matches("[data-modal]")) {
         const modalID = e.target.getAttribute("data-modal");
         document.getElementById(modalID).showModal();
+        modal.showModal();
+        modal.classList.add("opened");
     }
 
     if(e.target.matches(".close-btn")){
         e.target.closest("dialog").close();
+        modal.close();
+        modal.classList.add("closed");
     }
 });
 
