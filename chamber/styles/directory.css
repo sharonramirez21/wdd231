@@ -183,6 +183,82 @@ main {
     max-width: 100%;
 }
 
+/************************   DIRECTORY   ***************************************/
+#cards-directory {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+#cards-directory img {
+    width: 200px;
+    height: auto;
+}
+
+#cards-directory.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#cards-directory.list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#cards-directory.list .member-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: white;
+    color: black;
+}
+
+#cards-directory.list .member-card:nth-child(even) {
+    background-color: #3C4F76;
+    color: #fff;
+}
+
+#cards-directory.list .member-card h3,
+#cards-directory.list .member-card p,
+#cards-directory.list .member-card a {
+    font-size: 10px;
+    white-space: normal; 
+    flex: 1 1 auto;
+    min-width: 0;       
+}
+
+
+#cards-directory.list .member-card img {
+    display: none;
+}
+
+#cards-directory.list .member-card h3 {
+    width: 20%; 
+}
+#cards-directory.list .member-card p:nth-of-type(1) {
+    width: 25%;
+}
+#cards-directory.list .member-card p:nth-of-type(2) {
+    width: 15%;
+}
+#cards-directory.list .member-card a {
+    width: 25%;
+}
+#cards-directory.list .member-card p:nth-of-type(3) {
+    width: 15%; 
+}
+
 
 /***********----- div spotlight ------*****************/
 
@@ -272,6 +348,7 @@ main {
     font-size: 20px;
 }
 
+
 /****************** div first grid- *********************/
 .first-grid {
     max-width: 100%;
@@ -319,7 +396,7 @@ main {
 h2 {
     background-color: #3C4F76;
     color: #fff;
-    font-family: 'Merriweather', serif ;
+    font-family: 'Merriweather', serif;
     font-size: 18px;
     margin-bottom: 10px;
     padding: 4px;
@@ -360,4 +437,215 @@ h2 {
     padding: 4px;
     margin-left: 10px;
     margin-bottom: 10px;
+}
+
+/****************  FORM    *****************************/
+form {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+
+}
+
+form h2 {
+    padding: 5px;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-family: 'Merriweather', serif;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-family:'Roboto Flex', serif;
+    margin-left: 20px;
+    width: 100%;
+}
+
+form span {
+    font-size: 12px;
+    color: red;
+    font-style: italic;
+}
+
+input, textarea, select {
+    display: block;
+    width: 90%;
+    margin: 4px auto 15px auto;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+input:required {
+    border: 1px solid #ddd;
+}
+
+input:required:invalid {
+    box-shadow: inset -6px 0 0 0 red;
+}
+
+input:required:valid {
+    box-shadow: inset -6px 0 0 0 green;
+}
+
+input[type="submit"]{
+    display: block;
+    background: linear-gradient(to right, #3C4F76, #6c7b95);
+    color: #fff;
+    width: 60%;
+    font-size: 15px;
+} 
+
+/**************** MEMBERSHIP LEVELS *******************/
+.title-levels {
+    background: none;
+    color: #3C4F76;
+    font-family: 'Merriweather', serif;
+}
+
+.levels {
+    background-color: #f1f1f1;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 15px 0 15px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.levels h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.levels button {
+    background-color: #3C4F76;
+    padding: 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Roboto Flex', serif;
+}
+
+/** MODALS ---- */
+dialog {
+    margin: auto;
+    border-radius: 6px;
+}
+
+dialog:modal {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 85%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+dialog::backdrop {
+    background-color: rgb(0, 0,0,0.3);
+}
+
+.modal-header {
+    position: relative;
+    padding-right: 2rem;
+} 
+
+.modal-header .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #3C4F76;
+}
+
+dialog h3 {
+    color: #3C4F76;
+    font-family: 'Merriweather', serif;
+    padding-bottom: 10px;
+}
+
+dialog p, ul {
+    font-family: 'Roboto Flex', serif;
+}
+
+dialog ul {
+    margin-left: 20px;
+}
+
+
+/******** ANIMATION *********/
+@keyframes slideIN {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.levels {
+    opacity: 0;
+    animation: slideIN 0.5s ease-out forwards;
+    transform: translateX(-30px);
+}
+
+.levels:nth-child(1) { animation-delay: 0.1s; }
+.levels:nth-child(2) { animation-delay: 0.3s; }
+.levels:nth-child(3) { animation-delay: 0.5s; }
+.levels:nth-child(4) { animation-delay: 0.7s; }
+
+/***************** FORM *********************/
+#thank {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#thank h2 {
+    text-align: center;
+}
+
+.thanks-p {
+    font-family: 'Roboto Flex', serif;
+    text-align: center;
+    margin: 10px;
+}
+
+/************* CONFFETTI *************/
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 1;
+    border-radius: 20%;
+    animation: fall 3s linear 1;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
 }

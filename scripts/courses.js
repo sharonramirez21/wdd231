@@ -121,6 +121,7 @@ function displayCourses(list) {
 
     certificateSection.appendChild(buttonsDiv);
 
+
     //  certioficate list
     const courseList = document.createElement("div");
     let total = 0;
@@ -130,6 +131,10 @@ function displayCourses(list) {
         div.className = "course";
         div.textContent = `${course.subject} ${course.number} ${course.completed ? "✔" : ""}`;
         courseList.appendChild(div);
+
+        div.addEventListener("click", () => {
+            showModal(course);
+        });
 
         //change color
         if (course.completed) {
@@ -150,5 +155,53 @@ function displayCourses(list) {
     credits.textContent = `The total credits for courses listed above is ${total}.`;
     certificateSection.appendChild(credits);
 };
+
+const modal = document.getElementById("course-details");
+
+
+function showModal(course){
+    modal.innerHTML = "";
+
+    const btn = document.createElement("button");
+    btn.textContent = `❌`;
+    btn.id = "close";
+
+    const subject = document.createElement("h2");
+    subject.textContent = `${course.subject} ${course.number}`;
+    subject.classList.add("subject");
+
+    const title = document.createElement("h2");
+    title.textContent = `${course.title}`;
+
+    const credit = document.createElement("p");
+    credit.textContent = `Credits: ${course.credits}`;
+
+    const desc = document.createElement("p");
+    desc.textContent = `${course.description}`;
+
+    const certificate = document.createElement("p");
+    certificate.textContent = `Certificate: ${course.certificate}`
+
+    const tecn = document.createElement("p");
+    tecn.textContent = `${course.technology}`;
+
+    modal.appendChild(btn);
+    modal.appendChild(subject);
+    modal.appendChild(title);
+    modal.appendChild(credit);
+    modal.appendChild(desc);
+    modal.appendChild(certificate);
+    modal.appendChild(tecn);
+
+    modal.showModal();
+
+    btn.addEventListener('click', () => {
+        modal.close();
+    })
+
+    modal.addEventListener("click", (event) => {
+        if(event.target === modal) modal.close();
+    });
+}
 
 displayCourses(courses);

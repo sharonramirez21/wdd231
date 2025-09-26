@@ -55,7 +55,32 @@
         left: 20%;
         font-size: 40px;
     }
-    
+
+    /************ GRID MEMEBERS *************/
+    #cards-directory.grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        align-items: center;
+    }
+
+    #cards-directory.grid img { 
+        margin: 0 auto;
+    }
+
+    #cards-directory.grid .member-card {
+        padding-bottom: 20px;
+    }
+
+    #cards-directory.list .member-card h3,
+    #cards-directory.list .member-card p,
+    #cards-directory.list .member-card a {
+        font-size: 15px;
+        white-space: normal; 
+        flex: 1 1 auto;
+        min-width: 0;       
+    }        
+
+
     /********MEMEBERS ***/
     #spotlight {
         max-width: 100%;
@@ -159,5 +184,24 @@
     /********** FOOTER ********/
     footer {
         padding-left: 25px;
+    }
+
+
+    /*****************LEVELS MEMBERSHIP ****************/
+    .form-level {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        margin-left: 25px;
+    } 
+
+    .div-levelsM {
+        margin-top: 15px;
+    }
+
+    dialog {
+        width: 20%;
     }
 }
