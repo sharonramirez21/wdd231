@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 1024px) {
     header {
         display: grid;
         grid-template-columns: auto auto 1fr auto;
@@ -204,4 +204,72 @@
     dialog {
         width: 20%;
     }
+
+
+    /*********** DISCOVER ****************/
+    #discover {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+   .place {
+        width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title   title"
+            "image   desc"
+            "image   address"
+            "button  button";
+        margin: 0 auto;
+    }
+
+    .place h2 {
+        grid-area: title;
+    }
+
+    .place img {
+        grid-area: image;
+        height: auto;
+        display: block;
+    }
+
+    /********* FILTER FOR IMG ****************/
+    @keyframes filterBlur {
+        0% {
+            filter: blur(1px) grayscale(100%);
+        }
+        100% {
+            filter: blur(0) grayscale(0);
+        }
+    }
+
+    .place img:hover {
+        animation: filterBlur 1s forwards;
+    }
+
+    .place p {
+        grid-area: desc;
+        text-align: start;
+        margin-top: -2rem;
+    }
+
+    .place address {
+        grid-area: address;
+        text-align: start;
+        margin-top: -5rem;
+    }
+
+    .place p,
+    .place address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .place button {
+        grid-area: button;
+        width: 550px;
+    }
+
 }

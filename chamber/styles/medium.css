@@ -1,0 +1,65 @@
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .place {
+        width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title   title"
+            "image   desc"
+            "image   address"
+            "button  button";
+        gap: 1rem;
+    }
+
+    .place h2 {
+        grid-area: title;
+        text-align: start;
+    }
+
+    .place img {
+        grid-area: image;
+        width: 350px;
+        height: auto;
+        display: block;
+    }
+
+    /********* FILTER FOR IMG ****************/
+    @keyframes filterBlur {
+        0% {
+            filter: blur(1px) grayscale(100%);
+        }
+        100% {
+            filter: blur(0) grayscale(0);
+        }
+    }
+
+    .place img:hover {
+        animation: filterBlur 1s forwards;
+    }
+
+
+    .place p {
+        grid-area: desc;
+        text-align: start;
+        margin-top: -2rem;
+    }
+
+    .place address {
+        grid-area: address;
+        text-align: start;
+        margin-top: -12rem;
+    }
+
+    .place p,
+    .place address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .place button {
+        grid-area: button;
+        width: 750px;
+    }
+
+} 

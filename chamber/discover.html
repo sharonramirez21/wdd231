@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Chamber Directory Page </title>
+    <title>Santa Fe Chamber of Commerce Directory</title>
     <meta name="description" content="Explore services and places at Santa Fe Chamber of Commerce. Quality and great deals in one place.">
     <meta name="author" content="Sharon Ivon Ramirez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,12 +12,14 @@
 
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/navegation.js" defer></script>
     <script src="scripts/membership.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
 
     <meta property="og:title" content="Chamber Directory Page">
     <meta property="og:description" content="Explore services and places at Santa Fe Chamber of Commerce. Quality and great deals in one place.">
@@ -32,8 +34,8 @@
         <nav id="nav-id" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
@@ -42,15 +44,11 @@
     </header>
     
     <main>
-        <h1>Home</h1>
-
-        <div class="view-toggle">
-            <button id="grid-btn">Grid View</button>
-            <button id="list-btn">List View</button>
-        </div>
-
-        <div id="cards-directory"></div>
+        <h1 class="discover-title">Places</h1>
+        <div id="discover"></div>
+        <div id="sns-visit"></div>
     </main>
+
     <footer>
         <p class="name-footer">Santa Fe Chamber of Commerce</p>
         <p>Blas Parera 1234</p>

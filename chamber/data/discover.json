@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "name": "Metropolitan Cathedral of Santa Fe",
+      "address": "Plaza 25 de Mayo, Santa Fe, Argentina",
+      "description": "The first church in the city, founded by Juan de Garay in 1573. A historical and architectural icon.",
+      "cost": "Free (donation suggested)",
+      "photo_url": "./images/Catedral_Santa_Fe.webp"
+    },
+    {
+      "name": "Jewish Museum Hinenu",
+      "address": "1 de Mayo 2152, Santa Fe, Argentina",
+      "description": "A museum dedicated to the history and culture of the Jewish community in the Santa Fe region.",
+      "cost": "Free (donation suggested)",
+      "photo_url": "./images/Museo_Judio_Hinenu.webp"
+    },
+    {
+      "name": "Botanical Garden Ing. Lorenzo Parodi",
+      "address": "Santa Fe, Argentina",
+      "description": "A green space with a wide variety of native and exotic plant species.",
+      "cost": "Free",
+      "photo_url": "./images/Botanical_Garden_Santa_Fe.webp"
+    },
+    {
+      "name": "Suspension Bridge (Ingeniero Marcial Candioti)",
+      "address": "Av. de los 7 Jefes 3500, Santa Fe, Argentina",
+      "description": "Historic bridge connecting the banks of the Setúbal lagoon, inaugurated in 1928.",
+      "cost": "Free",
+      "photo_url": "./images/marcial-candioti.webp"
+    },
+    {
+      "name": "San Francisco Convent and Museum",
+      "address": "Amenábar 2557, Santa Fe, Argentina",
+      "description": "Catholic convent founded in 1673, declared a National Historic Monument.",
+      "cost": "Free (donation suggested)",
+      "photo_url": "./images/Convento_San_Francisco_Santa_Fe.webp"
+    },
+    {
+      "name": "Provincial Historical Museum Brigadier General Estanislao López",
+      "address": "San Martín 1490, Santa Fe, Argentina",
+      "description": "Museum preserving objects and documents from provincial and national history.",
+      "cost": "Free",
+      "photo_url": "./images/Museo_Historico_Santa_Fe.webp"
+    },
+    {
+      "name": "Juan de Garay Park",
+      "address": "Salvador Caputto 3000, Santa Fe, Argentina",
+      "description": "Large urban park with lakes, trails, and recreational areas.",
+      "cost": "Free",
+      "photo_url": "./images/Parque_Juan_de_Garay_Santa_Fe.webp"
+    },
+    {
+      "name": "Costa Litoral Catamaran Tours",
+      "address": "East Riverfront, Santa Fe, Argentina",
+      "description": "Catamaran tours along the Paraná River, offering panoramic views of the city.",
+      "cost": "Varies, approx. $95 ARS per person",
+      "photo_url": "./images/Catamaran_Costa_Litoral_Santa_Fe.webp"
+    }
+  ]
+}
