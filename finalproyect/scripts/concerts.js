@@ -19,7 +19,7 @@ async function getKpopConcerts() {
             throw new Error(await  response.text());
         }
     } catch (error){
-        console.log("The file its not working",error);
+        // console.log("The file its not working", error);
     }
 }
 

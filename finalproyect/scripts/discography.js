@@ -10,7 +10,7 @@ async function getDiscosKpop() {
         discos = data.discos;
         DisplayDiscosKpop(discos);
     } catch (error) {
-        console.log("The file its not working",error);
+        // console.log("The file its not working",error);
     }
 }
 
