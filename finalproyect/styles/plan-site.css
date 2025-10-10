@@ -569,11 +569,3 @@ input[type="submit"]:hover {
     padding-bottom: 5px;
     margin: 0 20px 0 20px;
 }
-
-.thanks-p {
-    font-weight: bold;
-    text-align: center;
-    font-size: 15px;
-    margin: 20px;
-    padding: 5px;
-}
