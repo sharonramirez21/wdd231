@@ -23,6 +23,7 @@
     <script src="scripts/navegation.js" defer></script>
     <script src="scripts/videos.js" defer></script>
     <script src="scripts/concerts.js" defer></script>
+    <script src="scripts/discography.js" defer></script>
 
 </head>
 <body>
@@ -32,69 +33,25 @@
         <button id="ham-btn" class="hamburguer" aria-label="navigation menu"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="groups.html">Groups</a></li>
-                <li><a href="discography.html">Discography</a></li>
+                <li class="current"><a href="discography.html">Discography</a></li>
                 <li><a href="contact-form.html">Contact</a></li>
 
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hero">
-            <img src="images/hero-image.webp" alt="K-pop groups">
-            <div class="title-name">
-                <h1 class="title-first">K-POP WORLD</h1>
-                <p>Discover the news of K-pop.</p>
+        <h1>Discography</h1>
+        <div class="modal-kpop">
+            <div id="disco-kpop">
+                <!--js with modal
+                and a JSON to the info -->
             </div>
-            <a class="join-btn" href="./contact-form.html">Contact Us</a>
-        </section>
-
-        <section class="video-part">
-            <h2>Official MV's</h2>
-            <div id="featured-video">
-                <!-- youtube video with js and json -->
-            </div>
-        </section>
-        
-
-        <section id="top-groups">
-            <h2>Top K-pop Groups</h2>
-            <div class="groups-container">
-                <div>
-                    <a href="groups.html#ateez">
-                        <img src="./images/ateez-group.webp" alt="Ateez photo by pinkllamanade">
-                        <p>ATEEZ</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="groups.html#blackpink">
-                        <img src="./images/blackpink-group.webp" alt="Blackpink photo by TV10">
-                        <p>BLACKPINK</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="groups.html#bts">
-                        <img src="./images/bts-group.webp" alt="BTS group photo.">
-                        <p>BTS</p>
-                    </a>
-                </div>
-
-                <div>
-                    <a href="groups.html#straykids">
-                        <img src="./images/straykids.webp" alt="Stray Kids group photo via Easy-Peasy.AI">
-                        <p>STRAY KIDS</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="concert-part">
-            <h2>Concerts</h2>
-            <div id="concerts-container">
-                <!-- concerts with JS and API-->
-            </div>
-        </section>
+            <div id="modal-container">
+                <!--modal container-->
+            </div> 
+        </div>
     </main>
     <footer>
         <div class="social">

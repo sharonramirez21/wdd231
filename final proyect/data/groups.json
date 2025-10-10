@@ -1,0 +1,124 @@
+{
+  "groups": [
+    {
+        "id": "ateez",
+        "name": "ATEEZ",
+        "members": ["Hongjoong","Seonghwa","Yunho","Yeosang","San","Mingi","Wooyoung","Jongho"],
+        "debut": 2018,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ateez_at_The_World_EP._2_Outlaw_Showcase.jpg/960px-Ateez_at_The_World_EP._2_Outlaw_Showcase.jpg?20240614201426",
+        "summary": "ATEEZ is an eight-member South Korean boy band formed by KQ Entertainment. Known for their powerful performances, they debuted in 2018 and quickly gained international recognition."
+    },
+    {
+        "id": "blackpink",
+        "name": "BLACKPINK",
+        "members": ["Jisoo","Jennie","Rosé","Lisa"],
+        "debut": 2016,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Blackpink_Pink_Carpet_Event_4.jpg/640px-Blackpink_Pink_Carpet_Event_4.jpg",
+        "summary": "BLACKPINK is a South Korean girl group formed by YG Entertainment. Debuted in 2016, they are famous worldwide for their hit songs and fashion influence."
+    },
+    {
+        "id": "bts",
+        "name": "BTS",
+        "members": ["RM","Jin","Suga","J-Hope","Jimin","V","Jungkook"],
+        "debut": 2013,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/BTS_during_a_White_House_press_conference_May_31%2C_2022_%28cropped%29.jpg/960px-BTS_during_a_White_House_press_conference_May_31%2C_2022_%28cropped%29.jpg?20220602022217",
+        "summary": "BTS is a seven-member South Korean boy band under Big Hit Entertainment. Debuted in 2013, BTS became global icons through their music, performances, and social campaigns."
+    },
+    {
+        "id": "straykids",
+        "name": "Stray Kids",
+        "members": ["Bang Chan","Lee Know","Changbin","Hyunjin","Han","Felix","Seungmin","I.N"],
+        "debut": 2017,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Stray_Kids_at_Incheon_Airport%2C_May_3%2C_2024_%282%29.png/960px-Stray_Kids_at_Incheon_Airport%2C_May_3%2C_2024_%282%29.png?20250405090253",
+        "summary": "Stray Kids is an eight-member boy group formed by JYP Entertainment. Known for their energetic performances and self-produced songs, they debuted in 2017."
+    },
+    {
+        "id": "twice",
+        "name": "TWICE",
+        "members": ["Nayeon","Jeongyeon","Momo","Sana","Jihyo","Mina","Dahyun","Chaeyoung","Tzuyu"],
+        "debut": 2015,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Twice_performing_at_the_Forum_in_Inglewood%2C_California_on_February_15%2C_2022.jpg/960px-Twice_performing_at_the_Forum_in_Inglewood%2C_California_on_February_15%2C_2022.jpg?20220228163311",
+        "summary": "TWICE is a nine-member South Korean girl group formed by JYP Entertainment. Since their debut in 2015, they are known for catchy songs and vibrant performances."
+    },
+    {
+        "id": "seventeen",
+        "name": "SEVENTEEN",
+        "members": ["S.Coups","Jeonghan","Joshua","Jun","Hoshi","Wonwoo","Woozi","DK","Mingyu","The8","Seungkwan","Vernon","Dino"],
+        "debut": 2015,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Seventeen_Caratland_2024.png/960px-Seventeen_Caratland_2024.png?20250207050158",
+        "summary": "SEVENTEEN is a thirteen-member boy group formed by Pledis Entertainment. They are known for self-producing most of their songs and choreography since their 2015 debut."
+    },
+    {
+        "id": "itzy",
+        "name": "ITZY",
+        "members": ["Yeji","Lia","Ryujin","Chaeryeong","Yuna"],
+        "debut": 2019,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/ITZY._Born_to_Be_in_Seattle._07.jpg/960px-ITZY._Born_to_Be_in_Seattle._07.jpg?20240609141212",
+        "summary": "ITZY is a five-member girl group under JYP Entertainment. Debuting in 2019, they are known for their confident performances and empowering messages."
+    },
+    {
+        "id": "txt",
+        "name": "TXT",
+        "members": ["Yeonjun","Soobin","Beomgyu","Taehyun","Hueningkai"],
+        "debut": 2019,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tomorrow_X_Together_at_a_Dior_event%2C_April_18%2C_2025.png/960px-Tomorrow_X_Together_at_a_Dior_event%2C_April_18%2C_2025.png?20250418113109",
+        "summary": "TXT, or Tomorrow X Together, is a five-member boy group under Big Hit Entertainment. They debuted in 2019 and are known for youthful concepts and storytelling."
+    },
+    {
+        "id": "redvelvet",
+        "name": "Red Velvet",
+        "members": ["Irene","Seulgi","Wendy","Joy","Yeri"],
+        "debut": 2014,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/20230530_Red_Velvet_Amsterdam_concert_052.jpg/960px-20230530_Red_Velvet_Amsterdam_concert_052.jpg?20230605185235",
+        "summary": "Red Velvet is a five-member girl group formed by SM Entertainment. Debuted in 2014, they are recognized for versatile music styles and strong vocal abilities."
+    },
+    {
+        "id": "gfriend",
+        "name": "GFRIEND",
+        "members": ["Sowon","Yerin","Eunha","YuJu","SinB","Umji"],
+        "debut": 2015,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/200209_%EC%96%91%EC%B2%9C_%ED%8C%AC%EC%82%AC%EC%9D%B8%ED%9A%8C.jpg/960px-200209_%EC%96%91%EC%B2%9C_%ED%8C%AC%EC%82%AC%EC%9D%B8%ED%9A%8C.jpg?20211218094847",
+        "summary": "GFRIEND is a six-member girl group formed by Source Music. They debuted in 2015, known for powerful choreography and harmonious vocals."
+    },
+    {
+        "id": "mamamoo",
+        "name": "MAMAMOO",
+        "members": ["Solar","Moonbyul","Wheein","Hwasa"],
+        "debut": 2014,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Mamamoo_My_con_2023.jpg/960px-Mamamoo_My_con_2023.jpg?20240713164919",
+        "summary": "MAMAMOO is a four-member girl group under RBW Entertainment. Debuted in 2014, they are praised for their vocal talent and stage charisma."
+    },
+    {
+        "id": "ikon",
+        "name": "iKON",
+        "members": ["Jay","Song","Bobby","DK","Ju-ne","Chan"],
+        "debut": 2015,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/IKON_at_Goan_Chart_Music_Awards_%282019%29.jpg/960px-IKON_at_Goan_Chart_Music_Awards_%282019%29.jpg?20220212083742",
+        "summary": "iKON is a six-member boy group formed by YG Entertainment. Since 2015, they are known for catchy songs and charismatic performances."
+    },
+    {
+        "id": "got7",
+        "name": "GOT7",
+        "members": ["JB","Mark","Jackson","Jinyoung","Youngjae","BamBam","Yugyeom"],
+        "debut": 2014,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Got7_on_the_red_carpet_of_2018_Asia_Artist_Awards%28AAA%29%2C_28_November_2018_02.jpg/960px-Got7_on_the_red_carpet_of_2018_Asia_Artist_Awards%28AAA%29%2C_28_November_2018_02.jpg?20190120154051",
+        "summary": "GOT7 is a seven-member boy group under JYP Entertainment. Debuted in 2014, they are popular for their dynamic choreography and international fanbase."
+    },
+    {
+        "id": "sf9",
+        "name": "SF9",
+        "members": ["Youngbin","Inseong","Jaeyoon","Dawon","Zuho","Rowoon","Taeyang","Hwiyoung","Chani"],
+        "debut": 2016,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/KCon_2017_LA_SF9_%28cropped%29.jpg/960px-KCon_2017_LA_SF9_%28cropped%29.jpg?20230918073118",
+        "summary": "SF9 is a nine-member boy group formed by FNC Entertainment. Debuted in 2016, they are known for sleek performances and strong stage presence."
+    },
+    {
+        "id": "nct",
+        "name": "NCT",
+        "members": ["Taeyong","Jaehyun","Doyoung","Ten","Winwin","Mark","Jeno","Haechan","Jaemin","Yangyang","Shotaro","Sungchan","Chenle","Jisung"],
+        "debut": 2016,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/NCT_going_to_a_Music_Bank_recording_in_April_2018_01.png/960px-NCT_going_to_a_Music_Bank_recording_in_April_2018_01.png?20180509015519",
+        "summary": "NCT (Neo Culture Technology) is a South Korean boy group formed by SM Entertainment. Debuting in 2016, they have a unique concept of unlimited members across multiple sub-units, known for versatile performances and international appeal."
+    }
+  ]
+}

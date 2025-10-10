@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-pop WORLD | WDD231</title>
+    <meta name="author" content="Sharon Ivon Ramirez">
+    <meta name="description" content="Recent K-pop news and releases.">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Meta tags -->
+    <meta property="og:title" content="Homepage - Sharon Ramirez WDD 231">
+    <meta property="og:description" content="Meet Sharon, a Software Development student ">
+    <meta property="og:image" content="https://raw.githubusercontent.com/sharonramirez21/wdd231/refs/heads/main/images/sharonramirez.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="stylesheet" href="styles/plan-site.css">
+    <link rel="stylesheet" href="styles/large-view.css">
+
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/navegation.js" defer></script>
+    <script src="scripts/videos.js" defer></script>
+    <script src="scripts/concerts.js" defer></script>
+    <script src="scripts/groups.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img class="site-logo" src="images/logo-site.svg" alt="Site Logo" width="640" height="640">
+        <span>K-pop World</span>
+        <button id="ham-btn" class="hamburguer" aria-label="navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li class="current"><a href="groups.html">Groups</a></li>
+                <li><a href="discography.html">Discography</a></li>
+                <li><a href="contact-form.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="groups-section">
+            <h1>GROUPS</h1>
+            <div id="group-container">
+                <!-- json and js :) -->
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/github.svg" alt="github logo" width="20" height="20"></a>
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="20" height="20"></a>
+            <a href="#" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp logo" width="20" height="20"></a>
+        </div>
+
+        <div class="credits">
+            <p>Credits:</p>
+            <p>Image by <a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank" rel="noopener">via Wikimedia Commons.</a> </p>
+        </div>
+
+        <p>Page by:</p>
+        <p>&copy;<span id="currentyear"></span>😀 Sharon Ramirez 😀 Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

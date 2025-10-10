@@ -1,0 +1,61 @@
+{
+    "discos": [
+        {
+            "title": "The Album",
+            "artist": "BLACKPINK",
+            "year": 2020,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Blackpink_-_EP.jpg/640px-Blackpink_-_EP.jpg",
+            "songs": ["How You Like That", "Lovesick Girls", "Pretty Savage", "You Never Know"]
+        },
+        {
+            "title": "Dynamite",
+            "artist": "BTS",
+            "year": 2020,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Bts_Dynamite_2.svg/640px-Bts_Dynamite_2.svg.png",
+            "songs": ["Dynamite","Dynamite (Instrumental)","Dynamite (Acoustic Remix)","Dynamite (Tropical Remix)"]
+        },
+        {
+            "title": "Ready to Be",
+            "artist": "TWICE",
+            "year": 2023,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ready_To_Be_by_Twice_logo.svg/640px-Ready_To_Be_by_Twice_logo.svg.png",
+            "songs": ["Set Me Free", "Happy Happy", "Ready to Be", "Moonlight"]
+        },
+        {
+            "title": "KARMA",
+            "artist": "Stray Kids",
+            "year": 2023,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Karma_by_Stray_Kids_cover_%28digital%29.png/640px-Karma_by_Stray_Kids_cover_%28digital%29.png",
+            "songs": ["KARMA", "Red Lights", "Muddy Water", "Haven"]
+        },
+        {
+            "title": "SEMICOLON",
+            "artist": "SEVENTEEN",
+            "year": 2023,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Seventeen_-_Semicolon.png/640px-Seventeen_-_Semicolon.png",
+            "songs": ["Darl+ing", "Heaven's Cloud", "Ruby", "Smile Flower"]
+        },
+        {
+            "title": "New Jeans",
+            "artist": "NewJeans",
+            "year": 2022,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/NewJeans_-_New_Jeans_EP_poster.png/640px-NewJeans_-_New_Jeans_EP_poster.png",
+            "songs": ["Attention", "Hype Boy", "Cookie", "Hurt"]
+        },
+        {
+            "title": "The Chaos Chapter: Freeze",
+            "artist": "TXT",
+            "year": 2021,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/The_Chaos_Chapter_Freeze_Logo.png?20210609140056",
+            "songs": ["0X1=LOVESONG", "Anti-Romantic", "Magic", "No Rules"]
+        },
+        {
+            "title": "Drama",
+            "artist": "aespa",
+            "year": 2023,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Aespa_Drama_logo.png/640px-Aespa_Drama_logo.png",
+            "songs": ["Drama", "Spicy", "Better Things", "Welcome to MY World"]
+        }
+    ]
+
+}

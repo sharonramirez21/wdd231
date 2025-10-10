@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "title": "Aespa - Drama",
+      "url": "https://youtu.be/D8VEhcPeSlc?si=w86fRcfJ_GRiR0Po",
+      "thumbnail": "./images/aespa-drama.webp"
+    },
+    {
+      "title": "Stray Kids - LALALALA",
+      "url": "https://youtu.be/dBDkYofMUs4?si=U3IuBV4Kt9fR4t4o",
+      "thumbnail": "./images/stray-kids.webp"
+    },
+    {
+      "title": "IVE - I AM",
+      "url": "https://youtu.be/6ZUIwj3FgUY?si=BUik4eOXzLL2IXOP",
+      "thumbnail": "./images/ive.webp"
+    },
+    {
+      "title": "LE SSERAFIM - EASY",
+      "url": "https://youtu.be/bNKXxwOQYB8?si=s_fZB56h1bkmiYo8",
+      "thumbnail": "./images/easy.webp"
+    },
+    {
+      "title": "ATEEZ - BOUNCY (K-HOT CHILLI PEPPERS)",
+      "url": "https://youtu.be/U0G5OA6ZH5w?si=-4Ahip3uPUc6rGGH",
+      "thumbnail": "./images/ateez.webp"
+    },
+    {
+      "title": "BTS - Dynamite",
+      "url": "https://youtu.be/gdZLi9oWNZg?si=Xz9j24GZjZjNnhFD",
+      "thumbnail": "./images/bts.webp"
+    }, 
+    {
+      "title": "Twice - What is Love?",
+      "url": "https://youtu.be/i0p1bmr0EmE?si=BxNeWxHN8e474Pj_",
+      "thumbnail": "./images/twice.webp"
+    }
+  ]
+}

@@ -14,12 +14,92 @@
 } 
 
 /************ HEADER ***********/
-
 header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    gap: 1px;
     background: var(--header-bg);
+    align-items: center;
+    max-width: 100%;
+    padding: 5px 0;
+    position: relative;
+}
+
+header span {
+    font-family: var(--title-text);
     color: #fff;
     text-align: center;
-    font-family: var(--title-text);
+    font-size: 20px;
+}
+
+.site-logo {
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+/******************** NAVEGATION ***************************/
+.hamburguer {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hamburguer::before {
+    content: "\2630";
+    font-size: 1.2rem;
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+    font-size: 1.2rem;
+}
+
+/***********  NAV *****************/
+.navigation {
+    display: none;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 20px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: solid 1px #ddd;
+    font-family: 'Lexend Deca', serif;
+    font-size: 15px;
+    font-family: var(--main-text);
+}
+
+.navigation li.current a {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+.navigation a:hover {
+    background-color: #ccc;
+    color: var(--secondary-color);
+    cursor: pointer;
 }
 
 /************ MAIN ***********/
@@ -31,6 +111,53 @@ main {
 h2 {
     color: var(--primary-color);
     font-size: 1.5rem;
+}
+
+/************--- hero img and btn *********************/
+#hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    padding: 0;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(50%);
+}
+
+#hero .join-btn {
+    position: absolute;
+    bottom: 10px;
+    bottom: 20px;     
+    right: 22px;   
+    padding: 10px 20px;
+    background: var(--header-bg);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Roboto Flex', serif;
+}
+
+#hero .join-btn:hover {
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+
+.title-name {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.title-first {
+    font-size: 40px;
 }
 
 /************ SECTION ***********/
@@ -63,6 +190,146 @@ section {
     height: auto;
 }
 
+/**************** VIDEO BOX ***************/
+#featured-video {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+
+.video-card {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.video-card img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.video-part h2 {
+    padding-bottom: 10px;
+}
+
+.video-card a {
+    text-align: center;
+    color: #000000;
+    text-decoration-line: none;
+}
+
+
+/************* groups-container section ***********/
+#top-groups {
+    background-color: var(--secondary-color);
+}
+
+#top-groups h2 {
+    text-align: center;
+}
+
+.groups-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.groups-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.groups-container img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid var(--primary-color);
+}
+
+.groups-container p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.groups-container a {
+    text-decoration: none;
+}
+
+.groups-container a:hover img {
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+
+.groups-container .credits {
+    font-size: 0.7rem;
+    margin: 2px 0 5px 0;
+    color: #ccc;
+}
+
+/*************** concert part *****************/
+.concert-part {
+    max-width: 100%;
+}
+
+.concert-part h2 {
+    margin-bottom: 10px;
+}
+
+.concert-card {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.concert-card img {
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.concert-details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: var(--main-text);
+} 
+
+.concert-details h3 {
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.concert-details p {
+    margin-bottom: 15px;
+}
+
+.btn-concert {
+    align-self: flex-end;
+    text-decoration: none;
+    background: var(--header-bg);
+    padding: 5px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
 /******** FOOTER *******/
 footer {
     background: var(--header-bg);
@@ -70,4 +337,239 @@ footer {
     text-align: center;
     padding: 20px;
     font-family: var(--title-text);
+}
+
+
+/**************credits ***************/
+.credits {
+    margin-bottom: 20px;
+}
+
+/************* SOCIAL **************/
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    padding-bottom: 10px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    border: #ddd solid 1px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+/************************* GROUP PAGE ------- ******************************/
+#groups-section {
+    background: none;
+}
+
+.group-card {
+    max-width: 100%;
+    margin: 0 5px 20px 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 10px;
+    opacity: 0;
+    animation: slideDown 0.5s ease forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.group-card:nth-child(1) { animation-delay: 0.1s; }
+.group-card:nth-child(2) { animation-delay: 0.3s; }
+.group-card:nth-child(3) { animation-delay: 0.5s; }
+.group-card:nth-child(4) { animation-delay: 0.7s; }
+.group-card:nth-child(5) { animation-delay: 0.9s; }
+.group-card:nth-child(6) { animation-delay: 0.10s; }
+.group-card:nth-child(7) { animation-delay: 0.12s; }
+.group-card:nth-child(8) { animation-delay: 0.14s; }
+.group-card:nth-child(9) { animation-delay: 0.16s; }
+.group-card:nth-child(10) { animation-delay: 0.18s; }
+.group-card:nth-child(11) { animation-delay: 0.20s; }
+.group-card:nth-child(12) { animation-delay: 0.22s; }
+.group-card:nth-child(13) { animation-delay: 0.24s; }
+.group-card:nth-child(14) { animation-delay: 0.26s; }
+.group-card:nth-child(15) { animation-delay: 0.28s; }
+
+
+.group-header {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.group-header h3 {
+    color: var(--secondary-color);
+    margin-left: 4px;
+    font-size: 22px;
+    font-family: var(--title-text);
+}
+
+.group-card img {
+    width: 100%;
+}
+
+.group-card p {
+    font-family: var(--main-text);
+    margin-top: 10px;
+}
+
+/********************** 3 PAGE --- DISCOGRAPHY *************************/
+h1 {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-family: var(--title-text);
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.modal-kpop {
+    max-width: 100%;
+}
+
+#disco-kpop {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.disco-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px 0 20px 0;
+    margin: auto;
+}
+
+.disco-card h3 {
+    color: var(--secondary-color);
+    margin: 10px 0 10px 0;
+}
+
+.disco-card button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    font-family: var(--main-text);
+}
+
+dialog {
+    margin: auto;
+    border: 2px solid var(--secondary-color);
+    border-radius: 6px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+/************** FORM *******************/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 3px 5px 0 rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: slideDownForm 0.5s ease forwards;
+}
+
+@keyframes slideDownForm {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 5px;
+}
+
+input[type="submit"] {
+    margin: 20px auto;
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 6px;
+    color: #fff;
+    width: 50%;
+}
+
+input[type="submit"]:hover {
+    background: #FFD700;
+    color: #01022e;
+}
+
+
+/******************** message page ****************/
+#sms-info {
+    margin: 20px;
+    border-radius: 4px;
+    background-color: #eeeeee;
+}
+
+.sms-title {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 10px;
+}
+
+.sms {
+    padding-bottom: 5px;
+    margin: 0 20px 0 20px;
+}
+
+.thanks-p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+    padding: 5px;
 }
