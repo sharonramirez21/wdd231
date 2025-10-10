@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // value to hidden
         ts.value = `${day}/${month}/${year}`;
-        console.log("Timestamp:", ts.value);
+        // console.log("Timestamp:", ts.value);
     }
 
     // message.html ==== info
