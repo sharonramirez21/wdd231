@@ -108,9 +108,12 @@ main {
     font-family: var(--main-text);
 }
 
-h2 {
+h2,
+.video-part h2,
+#top-groups h2 {
     color: var(--primary-color);
     font-size: 1.5rem;
+    text-align: center;
 }
 
 /************--- hero img and btn *********************/
@@ -212,10 +215,6 @@ section {
     border-radius: 6px;
 }
 
-.video-part h2 {
-    padding-bottom: 10px;
-}
-
 .video-card a {
     text-align: center;
     color: #000000;
@@ -226,10 +225,6 @@ section {
 /************* groups-container section ***********/
 #top-groups {
     background-color: var(--secondary-color);
-}
-
-#top-groups h2 {
-    text-align: center;
 }
 
 .groups-container {
@@ -283,6 +278,7 @@ section {
 }
 
 .concert-part h2 {
+    text-align: start;
     margin-bottom: 10px;
 }
 
