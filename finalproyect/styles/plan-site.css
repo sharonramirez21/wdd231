@@ -335,6 +335,9 @@ footer {
     font-family: var(--title-text);
 }
 
+footer a {
+    color: #FFD700;
+}
 
 /**************credits ***************/
 .credits {
