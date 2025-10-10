@@ -35,8 +35,6 @@
                 <li class="current"><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="groups.html">Groups</a></li>
                 <li><a href="discography.html">Discography</a></li>
-                <li><a href="contact-form.html">Contact</a></li>
-
             </ul>
         </nav>
     </header>
@@ -94,6 +92,26 @@
             <div id="concerts-container">
                 <!-- concerts with JS and API-->
             </div>
+        </section>
+
+
+        <section class="form-site">
+            <form id="form" action="message.html" method="get" title="Send a Message Form">
+                <h1>Leave a Message We’ll Reply Soon!</h1>
+                <label for="Name">Name:</label><input type="text" id="Name" name="Name" title="Enter your Name" autocomplete="given-name" required>
+                <label for="email">Email:</label><input type="email" name="email" id="email" title="Enter your email address" autocomplete="email" placeholder="example@gmail.com" required>
+                <label for="phone">Mobile Phone:</label><input type="tel" id="phone" name="phone" title="Enter your phone number" autocomplete="tel" required>
+                <label for="TypeSMS">Membership Level:</label><select name="TypeSMS" id="TypeSMS">
+                    <option value="" disabled selected>--Select one--</option>
+                    <option value="fan">Fan Message</option>
+                    <option value="Request">Song or Group Request</option>
+                    <option value="feedback">Feedback about the Website</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="message-text">Message:</label><textarea name="message" id="message" title="Write your message" required></textarea>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Send Message 💌">
+            </form>
         </section>
     </main>
     <footer>

@@ -496,6 +496,10 @@ dialog {
 
 
 /************** FORM *******************/
+.form-site {
+    background-color: #f0f0f0;
+}
+
 form {
     display: flex;
     flex-direction: column;
