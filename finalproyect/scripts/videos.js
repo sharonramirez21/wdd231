@@ -9,7 +9,7 @@ async function getVideos() {
         videos = data.items;
         displayVideos();
     } catch (error) {
-        console.log(error);
+        console.log("The file its not working",error);
     }
 }
 

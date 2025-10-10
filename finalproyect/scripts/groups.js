@@ -10,7 +10,7 @@ async function getGroupsInfo() {
         DisplayGroups(groups);
         scrollToHash();
     } catch (error) {
-        console.log(error);
+        console.log("The file its not working",error);
     }
 }
 
